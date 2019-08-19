@@ -8,7 +8,6 @@ spec:
   # default values (i.e. no values will be specified for that element, not even
   # the defaults baked into the chart values.yaml).
   istio:
-    multitenant: false
     global:
       proxy:
         # constrain resources for use in smaller environments
@@ -56,7 +55,6 @@ spec:
     kiali:
       # change to false to disable kiali
       enabled: true
-      tag: v1.3.0
       # create a secret for accessing kiali dashboard with the following credentials
       # dashboard:
       #   user: admin
