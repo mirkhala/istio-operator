@@ -8,6 +8,7 @@ spec:
   # default values (i.e. no values will be specified for that element, not even
   # the defaults baked into the chart values.yaml).
   istio:
+    multitenant: false
     global:
       proxy:
         # constrain resources for use in smaller environments
@@ -55,7 +56,7 @@ spec:
     kiali:
       # change to false to disable kiali
       enabled: true
-    
+      tag: 1.0.0
       # create a secret for accessing kiali dashboard with the following credentials
       # dashboard:
       #   user: admin
@@ -64,6 +65,7 @@ spec:
     tracing:
       # change to false to disable tracing (i.e. jaeger)
       enabled: true
+      tag: 1.13.1
       jaeger:
         # simple, all-in-one strategy
         template: all-in-one
