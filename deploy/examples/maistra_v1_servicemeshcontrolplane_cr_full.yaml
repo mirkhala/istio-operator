@@ -65,7 +65,6 @@ spec:
     tracing:
       # change to false to disable tracing (i.e. jaeger)
       enabled: true
-      tag: 1.13.1
       jaeger:
         # simple, all-in-one strategy
         template: all-in-one
