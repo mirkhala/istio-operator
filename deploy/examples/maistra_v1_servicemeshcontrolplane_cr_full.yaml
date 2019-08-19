@@ -56,7 +56,7 @@ spec:
     kiali:
       # change to false to disable kiali
       enabled: true
-      tag: 1.0.0
+      tag: v1.3.0
       # create a secret for accessing kiali dashboard with the following credentials
       # dashboard:
       #   user: admin
